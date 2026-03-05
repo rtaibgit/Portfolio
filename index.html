@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rayyan Taib | Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="page">
+    <h1>Rayyan Taib</h1>
+    <p class="note">Junior Cloud / DevOps Learner • Building AWS + Linux projects</p>
+
+    <div class="nav flex-container">
+      <a class="btn" href="#about">About</a>
+      <a class="btn" href="#projects">Projects</a>
+      <a class="btn" href="#skills">Skills</a>
+      <a class="btn" href="#contact">Contact</a>
+    </div>
+
+    <div id="about" class="card">
+      <h2>About Me</h2>
+      <p>
+        I’m learning web development and cloud/DevOps skills. I enjoy building small projects and improving them
+        through frequent updates.
+      </p>
+    </div>
+
+    <div id="projects" class="card">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>1) Serverless Automation: S3 → Lambda → Email Notification</h3>
+    <p>
+      Built an event-driven serverless workflow where uploading a file to Amazon S3 triggers an AWS Lambda function.
+      The function reads the object, processes the content (e.g., count/parse), and sends an email notification.
+    </p>
+    <ul>
+      <li><b>Tech:</b> AWS S3, AWS Lambda (Python), S3 event triggers, logging/monitoring</li>
+      <li><b>What I learned:</b> parsing S3 event JSON (Records[0]...), debugging deployment issues, validating outputs with logs</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>2) Cloud Web App Deployment: EC2 + RDS + Networking Troubleshooting</h3>
+    <p>
+      Deployed a Linux web server on EC2 and worked through real connectivity issues to get the site reachable.
+      Connected the app environment to an RDS database as part of the lab architecture.
+    </p>
+    <ul>
+      <li><b>Tech:</b> EC2, RDS, VPC fundamentals (subnets/route tables), Security Groups, Linux services (httpd), curl</li>
+      <li><b>What I learned:</b> diagnosing “can’t connect” problems, fixing public IPv4 assignment, verifying services and ports</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>3) Governance & Eventing: Tagging, CLI Queries, and EventBridge Rules</h3>
+    <p>
+      Used AWS CLI filters/queries to identify instances by subnet and tags, supporting basic governance decisions
+      (what should be kept vs terminated). Designed EventBridge rules to react to EC2 lifecycle events and send notifications.
+    </p>
+    <ul>
+      <li><b>Tech:</b> AWS CLI, EC2 tags, filters/queries, EventBridge patterns, IAM role/permission concepts</li>
+      <li><b>What I learned:</b> writing correct filters, avoiding mistakes caused by missing tags, dealing with IAM permission blockers</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>4) Practical Ops: Self-Hosted Docker Service + Security Log Investigation</h3>
+    <p>
+      Set up an Ubuntu machine as a lightweight home server, ran a file management service in Docker, and enabled secure remote access
+      using a tunnelling approach. Also reviewed AWS audit-style logs to understand suspicious activity (role, IP, API calls).
+    </p>
+    <ul>
+      <li><b>Tech:</b> Ubuntu, Docker, containers, remote access/tunnelling, audit logs (CloudTrail concepts)</li>
+      <li><b>What I learned:</b> Docker permissions troubleshooting, safer exposure vs port-forwarding, reading logs to understand actions and impact</li>
+    </ul>
+  </div>
+</div>
+
+    <div id="skills" class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>AWS: EC2, S3, Lambda, RDS, EventBridge (basics)</li>
+        <li>Linux & CLI: services, networking checks, logs, troubleshooting</li>
+        <li>Automation mindset: event-driven workflows, small frequent changes</li>
+        <li>Web basics: HTML & CSS</li>
+        <li>Docker: running containers, permissions troubleshooting</li>
+      </ul>
+    </div>
+
+    <div id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: rayyantaib@outlook.com</p>
+      <p>GitHub: <a href="https://github.com/rtaibgit" target="_blank">github.com/rtaibgit</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
